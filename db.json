@@ -1,0 +1,15 @@
+{
+    "posts": [
+      {"title": "Bộ sưu tập đồng hồ mới về!"},
+      {"title": "Đăng kí thông tin mới nhất!"},
+      {"title": "Gặp chuyên gia tư vấn!"},
+      {"title": "Bạn cần tư vấn gì gọi ngay 19008198!"}
+    ],
+    "comments": [
+      { "id": "1", "text": "a comment about post 1", "postId": "1" },
+      { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }

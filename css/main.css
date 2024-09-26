@@ -1,0 +1,578 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: #ECECEC;
+}
+.heading-top a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.heading-mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading-logo {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+}
+.heading-logo a img {
+  max-width: 210px;
+  max-height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.heading-form {
+  width: 33.3%;
+  display: flex;
+  justify-content: end;
+}
+.heading-form .heading-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 320px;
+  height: 40px;
+  position: relative;
+}
+.heading-form .heading-right input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 42px;
+  border-radius: 12px;
+  padding-bottom: 2px;
+  border: 2px solid #EDEDED;
+  outline: none;
+  background-color: #EDEDED;
+}
+.heading-form .heading-right input:focus {
+  background-color: whitesmoke;
+}
+.heading-form .heading-right input:focus::-moz-placeholder {
+  color: #757575;
+}
+.heading-form .heading-right input:focus::placeholder {
+  color: #757575;
+}
+.heading-form .heading-right input::-moz-placeholder {
+  font-size: 14px;
+  color: #757575;
+}
+.heading-form .heading-right input::placeholder {
+  font-size: 14px;
+  color: #757575;
+}
+.heading-form .heading-right a i {
+  position: absolute;
+  font-size: 20px;
+  color: #757575;
+  left: 13px;
+  top: 12px;
+}
+.heading-form .heading-right a i:hover {
+  color: red;
+}
+.heading-form .heading-right a .cart-outline {
+  font-size: 2.7em;
+  color: #757575;
+  display: block;
+  padding-left: 20px;
+}
+.heading-form .heading-right a .cart-outline:hover {
+  color: red;
+}
+
+.heading-below {
+  border-bottom: 2px solid #EDEDED;
+  margin-top: 50px;
+  height: 40px;
+}
+
+.heading-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.heading-list li {
+  list-style: none;
+  font-size: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+  padding-bottom: 10px;
+  width: 100px;
+}
+.heading-list li:hover {
+  border-bottom: 2px solid red;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.heading-list li:hover .list-trademark {
+  visibility: visible;
+}
+.heading-list li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #757575;
+  transition: transform 0.3s ease;
+}
+.heading-list li a::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.heading-list li ul {
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  max-height: 66vh;
+  width: 100%;
+  left: 0;
+  top: 214px;
+  z-index: 100;
+  padding-left: 6%;
+  padding-top: 2%;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+}
+.heading-list li ul li {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.heading-list li ul li:hover {
+  border: none;
+}
+.heading-list li ul li:last-child {
+  padding-left: 30px;
+  padding-left: 50px;
+}
+.heading-list li ul li h2 {
+  font-size: 20px;
+  color: #757575;
+  text-align: left;
+  text-transform: capitalize;
+}
+.heading-list li ul li div {
+  padding-bottom: 20px;
+  text-align: left;
+}
+.heading-list li ul li div a:hover {
+  color: red;
+}
+
+.heading-below .heading-list .paren-male::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 56px;
+  left: 0;
+}
+.heading-below .heading-list .paren-male:hover .list-male {
+  visibility: visible;
+}
+.heading-below .heading-list .paren-male .list-male {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  visibility: hidden;
+  background: rgb(255, 255, 255);
+}
+.heading-below .heading-list .paren-female::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  left: 0;
+}
+.heading-below .heading-list .paren-female:hover .list-female {
+  visibility: visible;
+}
+.heading-below .heading-list .list-female {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  visibility: hidden;
+  background: rgb(255, 255, 255);
+}
+.heading-below .heading-list .list-female li:last-child {
+  padding: initial;
+}
+.heading-below .heading-list .paren-couple:hover .list-couple {
+  visibility: visible;
+}
+.heading-below .heading-list .list-couple {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  visibility: hidden;
+  background: rgb(255, 255, 255);
+}
+.heading-below .heading-list .list-couple li:last-child {
+  padding: initial;
+}
+.heading-below .heading-list .paren-jewelry:hover .list-jewelry {
+  visibility: visible;
+}
+.heading-below .heading-list .paren-jewelry .list-jewelry {
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  background: rgb(255, 255, 255);
+}
+.heading-below .heading-list .paren-jewelry .list-jewelry li {
+  width: 21%;
+}
+.heading-below .heading-list .paren-accessory:hover .list-accessory {
+  visibility: visible;
+}
+.heading-below .heading-list .paren-accessory .list-accessory {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+}
+.heading-below .heading-list .paren-accessory .list-accessory li {
+  width: 20%;
+}
+.heading-below .heading-list .paren-contact {
+  position: relative;
+}
+.heading-below .heading-list .paren-contact a:hover::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  z-index: 99;
+  left: 0;
+}
+.heading-below .heading-list .paren-contact:hover .list-contact {
+  visibility: visible;
+}
+.heading-below .heading-list .paren-contact .list-contact {
+  visibility: hidden;
+  z-index: 99;
+  max-height: 100vh;
+  position: absolute;
+  left: 0;
+  width: 20vw;
+  padding: 10px 20px;
+  top: 51;
+  text-align: left;
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 2px 2px rgb(196, 193, 193);
+}
+.heading-below .heading-list .paren-contact .list-contact div {
+  border-bottom: 1px solid rgb(220, 220, 220);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.heading-below .heading-list .paren-contact .list-contact div:last-child {
+  border-bottom: none;
+}
+.heading-below .heading-list .paren-contact .list-contact div a::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.heading-below .heading-list .paren-news {
+  position: relative;
+}
+.heading-below .heading-list .paren-news a::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 51px;
+  background-color: transparent;
+  z-index: 99;
+  left: 0;
+}
+.heading-below .heading-list .paren-news:hover .list-news {
+  visibility: visible;
+}
+.heading-below .heading-list .paren-news .list-news {
+  visibility: hidden;
+  max-height: 100vh;
+  z-index: 99;
+  position: absolute;
+  width: 18vw;
+  padding: 10px 20px;
+  top: 51;
+  left: -107px;
+  text-align: left;
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 2px 2px rgb(196, 193, 193);
+}
+.heading-below .heading-list .paren-news .list-news div {
+  border-bottom: 1px solid rgb(220, 220, 220);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.heading-below .heading-list .paren-news .list-news div:last-child {
+  border-bottom: none;
+}
+.heading-below .heading-list .paren-news .list-news div a::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.dark-mode {
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+}
+.dark-mode label {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dark-mode label input {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  opacity: 0;
+}
+.dark-mode label input:checked ~ .toggle {
+  background: #2b2b2b;
+}
+.dark-mode label input:checked ~ .sun {
+  transform: rotate(360deg) scale(0);
+}
+.dark-mode label input:checked ~ .moon {
+  transform: scale(1) rotate(360deg);
+  transition-delay: 0s;
+}
+.dark-mode label input:checked ~ .animateBg {
+  -webkit-clip-path: circle(70.7% at 50% 50%);
+          clip-path: circle(70.7% at 50% 50%);
+}
+.dark-mode label .moon {
+  position: absolute;
+  font-size: 2em;
+  color: #757575;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+  transition: 1s ease;
+  transition-delay: 0.4s;
+  transform: scale(0);
+}
+.dark-mode label .sun {
+  font-size: 2em;
+  color: #757575;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+  transition: 0.6s ease;
+  transition-delay: 0.4s;
+}
+.dark-mode label .toggle {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  transition: 1s linear;
+}
+.dark-mode label .animateBg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8f8;
+  z-index: -2;
+  -webkit-clip-path: circle(0% at 50% 50%);
+          clip-path: circle(0% at 50% 50%);
+  transition: 1.5s ease-out;
+}
+
+video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.paner {
+  position: relative;
+  top: 10px;
+}
+
+#sound-toggle {
+  display: none;
+}
+#sound-toggle:checked + .sound-display label {
+  box-shadow: 10px 10px 30px rgb(219, 211, 211) inset;
+}
+#sound-toggle:checked + .sound-display label .sound-circle {
+  left: 100%;
+  transform: translate(-110%, -50%);
+  background: #2cb045;
+  box-shadow: 10px 10px 20px rgb(52, 191, 75), -10px -10px 30px rgb(52, 191, 75) inset;
+}
+#sound-toggle:checked + .sound-display label .sound-circle .on {
+  margin-top: 150%;
+}
+#sound-toggle:checked + .sound-display label .sound-circle .off {
+  margin-top: 0%;
+}
+
+.sound-display {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+.sound-display label {
+  width: 130px;
+  height: 60px;
+  border-radius: 999px;
+  box-shadow: 10px 10px 30px rgb(136, 134, 134) inset;
+  cursor: pointer;
+  position: relative;
+  transition: all 1s;
+}
+.sound-display label .sound-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: white;
+  box-shadow: 10px 10px 20px rgb(202, 188, 188), -10px -10px 30px rgb(202, 188, 188) inset;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(10%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+ion-icon {
+  font-size: 30px;
+  position: absolute;
+}
+
+.on {
+  margin-top: 0px;
+}
+
+.off {
+  margin-top: -260px;
+}
+
+.inner {
+  display: grid;
+  justify-items: center;
+  border-bottom: 1px solid #5c5454;
+}
+.inner .inner-center {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: dense;
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 1%;
+  margin-top: 6%;
+}
+.inner .inner-center section {
+  padding: 0 10px;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inner .inner-center section img {
+  border-radius: 20%;
+  cursor: pointer;
+}
+.inner .inner-center section p {
+  font-size: 14px;
+  padding-top: 31px;
+  max-width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.watch {
+  max-width: 1072px;
+  max-height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+  grid-template-areas: "aa aa bb cc" "aa aa dd dd";
+  padding-top: 40px;
+}
+.watch .watch-saga {
+  grid-area: aa;
+  width: 513px;
+  height: 590px;
+}
+.watch .watch-saga img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.watch .watch-nam {
+  grid-area: bb;
+  width: 247px;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.watch .watch-nam img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.watch .watch-nu {
+  grid-area: cc;
+  width: 247px;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.watch .watch-nu img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.watch .watch-doi {
+  grid-area: dd;
+  width: 513px;
+  height: 280px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.watch .watch-doi img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=main.css.map */
